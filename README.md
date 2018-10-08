@@ -5,3 +5,5 @@ For more information, see comments in ```main.asm``` and peruse [Tarpeeksi Hyvae
 
 ### Building
 To assemble U7DCP for DOS, which is its only target, do ```fasm main.asm u7dcp.exe```.
+
+![A screenshot of U7DCP](http://tarpeeksihyvaesoft.com/soft/img/u7dcp.png)
