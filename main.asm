@@ -98,9 +98,9 @@ segment @BASE_DATA
     fn_mainmenu_exe db "MAINMENU.EXE",0,'$'
     fn_endgame_exe db "ENDGAME.EXE",0,'$'
 
-	; expected file sizes of the executables.
-	MAINMENU_EXE_BYTESIZE = 127116
-	ENDGAME_EXE_BYTESIZE = 107630
+    ; expected file sizes of the executables.
+    MAINMENU_EXE_BYTESIZE = 127116
+    ENDGAME_EXE_BYTESIZE = 107630
 
     ; file handles.
     fh_mainmenu_exe dw 0
@@ -130,6 +130,5 @@ segment @BASE_DATA
     err_file_size_endgame db "ERROR: ENDGAME.EXE has an incompatible byte size. Exiting.",0ah,0dh,'$'
     err_additional dw err_generic           ; a pointer to an additional error message string.
 
-	FILE_BUFFER_SIZE = 500
+    FILE_BUFFER_SIZE = 500
     file_buffer rb FILE_BUFFER_SIZE         ; a memory buffer for reading data from disk into.
-
